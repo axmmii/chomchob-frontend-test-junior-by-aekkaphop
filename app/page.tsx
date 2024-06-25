@@ -74,10 +74,10 @@ export default function Home() {
       <div className="bg-white flex-grow">
         <div className="container mx-auto p-4 mt-[170px] mb-[116px] flex-grow">
           <div className="flex justify-between items-center mt-4 ">
-            <div className="text-[18px] text-[#373737] font-semibold  mr-[1030px]">
+            <div className="text-[18px] text-[#373737] font-semibold  whitespace-nowrap mr-[1000px]">
               {searchQuery === '' ? `Products (${pokemons.length})` : `Search Result (${searchResults.length} Product${searchResults.length !== 1 ? 's' : ''})`}
             </div>
-            <div className="flex space-x-0 mr-[30px] absolute right-[160px] ">
+            <div className="flex  right-[40px] relative">
               <button
                 onClick={() => setViewMode('grid')}
                 className={`p-[8px] rounded-l-[6px] ${viewMode === 'grid' ? 'bg-[#FFCB05]' : 'bg-[#F9F9F9]'} flex items-center justify-center w-10 h-10`}
@@ -94,7 +94,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-white mb-[380px]">
+          <div className="bg-white mb-[380px] flex flex-col">
             {searchQuery !== '' && searchResults.length === 0 ? (
               <div className="flex flex-col items-center justify-center mt-[100px] mb-[200px]">
                 <div className="text-4xl mt-[25px]"><Image src={Errorsearch} alt="errorsearch" /></div>
@@ -102,7 +102,7 @@ export default function Home() {
                 <div className="text-base font-normal font-inter text-[#909090]">Please try to search for something else.</div>
               </div>
             ) : (
-              <div className={`mt-4 ${viewMode === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4' : 'space-y-4'}`}>
+              <div className={`mt-4  ${viewMode === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ' : 'space-y-4'}`}>
                 {displayPokemons.map((pokemon) => (
                   viewMode === 'grid' ? (
                     <PokemonCard key={pokemon.name} name={pokemon.name} />
