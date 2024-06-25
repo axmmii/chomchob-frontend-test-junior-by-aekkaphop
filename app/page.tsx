@@ -99,7 +99,7 @@ export default function Home() {
               <div className="flex flex-col items-center justify-center mt-[100px] mb-[200px]">
                 <div className="text-4xl mt-[25px]"><Image src={Errorsearch} alt="errorsearch" /></div>
                 <div className="text-xl font-normal mt-4 font-inter text-[#909090]">Oops! Nothing was found for “ {searchQuery} ”</div>
-                <div className="text-xl font-normal font-inter text-[#909090]">Please try to search for something else.</div>
+                <div className="text-base font-normal font-inter text-[#909090]">Please try to search for something else.</div>
               </div>
             ) : (
               <div className={`mt-4 ${viewMode === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4' : 'space-y-4'}`}>
