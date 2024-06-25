@@ -1,7 +1,6 @@
 "use client"
 import './globals.css';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { PokemonCard } from './[components]/PokemonCard';
 import { PokemonListItem } from './[components]/PokemonListItem';
 import { fetchPokemonList } from './api/api';

@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { useRouter } from "next/navigation";
 import Image from 'next/image'; 
 import Header from '../[components]/Header/Header';
 import Trashalt from '../[public]/trashalt.svg';
@@ -18,7 +17,6 @@ const PokemonTotalPage = () => {
   const [cart, setCart] = useState<Pokemon[]>([]);
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const router = useRouter();
   
   useEffect(() => {
     const fetchPokemonData = async () => {
