@@ -23,8 +23,8 @@ const Header: React.FC<HeaderProps> = ({ searchQuery, handleSearchChange, clearS
   return (
     <header className="fixed w-full top-0 left-0 shadow-md z-10">
       <div className="bg-[#FFCB05] text-black p-2 flex justify-between items-center w-full h-[56px]">
-        <h1 className="text-[18px] text-[#373737] ml-[200px] sm:ml-[40px] md:ml-[40px] whitespace-nowrap">Welcome to Pokemon shop!</h1>
-        <div className="flex items-center space-x-6 text-[18px] mr-[120px]  md:flex md:mr-[0px]">
+        <h1 className="text-[18px] text-[#373737] ml-[100px] sm:ml-[120px] md:flex md:ml-[115px] whitespace-nowrap">Welcome to Pokemon shop!</h1>
+        <div className="flex items-center space-x-6 text-[18px] mr-[100px]   md:flex md:mr-[166px]">
           <span className="flex items-center text-[#373737] whitespace-nowrap">
             <Image src={Location} alt="location" className="w-6 mr-[6px]" />
             Contact 123456
@@ -34,9 +34,9 @@ const Header: React.FC<HeaderProps> = ({ searchQuery, handleSearchChange, clearS
             <Image src={LogoCar} alt="group" className="w-6 mr-[6px]" />
             Track your order
           </span>
-          <span className="border-l border-[#373737]  h-[24px]"></span>
+          <span className="border-l border-[#373737]  h-[24px] "></span>
           <span className="flex items-center text-[#373737] whitespace-nowrap">
-            <Image src={Discount} alt="discount" className="w-6 mr-[6px]" />
+            <Image src={Discount} alt="discount" className="w-6 mr-[6px]  " />
             All Offers
           </span>
         </div>
