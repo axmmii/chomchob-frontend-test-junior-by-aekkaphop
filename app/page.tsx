@@ -71,7 +71,7 @@ export default function Home() {
         cartCount={cartCount}
       />
       <div className="bg-white flex-grow">
-        <div className="container mx-auto p-4 mt-[170px] mb-[116px] flex-grow">
+        <div className="container grid mx-auto p-4 mt-[170px] mb-[116px] flex-grow">
           <div className="flex justify-between items-center mt-4 ">
             <div className="text-[18px] text-[#373737] font-semibold  whitespace-nowrap mr-[1000px]">
               {searchQuery === '' ? `Products (${pokemons.length})` : `Search Result (${searchResults.length} Product${searchResults.length !== 1 ? 's' : ''})`}

@@ -14,5 +14,7 @@ footer {
 .custom-input {
   caret-color: #FFCB05;
 }
-
-
+.grid{
+  grid-template-columns: repeat(autu-fit,minmax(200px,1fr));
+  display: grid;
+}
